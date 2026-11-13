@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detall del Pokémon</title>
+  <link rel="stylesheet" href="css/estils.css">
+  <script src="js/detail.js" defer></script>
+</head>
+<body>
+  <main class="detall">
+    <h1>Detall del Pokémon</h1>
+    <h2 id="pokemon-name"></h2>
+    <img id="pokemon-img" class="detall-img" src="" alt="">
+    <p id="pokemon-info" class="detall-info"></p>
+
+    <table class="taula-habilitats">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Habilitat</th>
+        </tr>
+      </thead>
+      <tbody id="abilities-body"></tbody>
+    </table>
+
+    <p id="missatge-error" class="missatge-error" aria-live="polite"></p>
+    <button id="btn-back" type="button">← Torna enrere</button>
+  </main>
+</body>
+</html>

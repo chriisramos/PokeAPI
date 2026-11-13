@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+/* Contenidor de les cards */
+.llista-pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  min-height: 150px;
+}
+
+/* Card (la crearàs amb JS amb classList.add("card")) */
+.card {
+  width: 150px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.boto-detall {
+  cursor: pointer;
+}
+
+/* Paginació */
+.paginacio {
+  margin-top: 1rem;
+}
+
+.paginacio button {
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+}
+
+.paginacio button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Missatge d'error de les peticions */
+.missatge-error {
+  color: #c92a2a;
+  min-height: 1.2em;
+}
+
+.detall {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.detall h2 {
+  text-transform: capitalize;
+}
+
+.detall-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.detall-info {
+  margin: 0.5rem 0 1rem;
+}
+
+.taula-habilitats {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.taula-habilitats th,
+.taula-habilitats td {
+  padding: 0.5rem;
+  border: 1px solid #999;
+}
+
+.taula-habilitats th {
+  background-color: #f0f0f0;
+}
+
+#btn-back {
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+}
